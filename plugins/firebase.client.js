@@ -8,8 +8,8 @@ export default defineNuxtPlugin(() => {
 
   return {
     provide: {
-      auth: getAuth(app),
-      firestore: getFirestore(app)
-    },
-  };
+      // auth: getAuth(app),
+      // firestore: getFirestore(app)
+    }
+  }
 });
