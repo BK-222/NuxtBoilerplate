@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: ['@pinia/nuxt', '@nuxt/image'],
+  modules: ['@pinia/nuxt', '@nuxt/image', '@nuxtjs/google-fonts'],
   css: ['@/assets/css/main.css'],
   postcss: {
     plugins: {
@@ -11,6 +11,11 @@ export default defineNuxtConfig({
     }
   },
   runtimeConfig: {
+    firebaseAdmin: {
+      // projectId: process.env.FIREBASE_ADMIN_PROJECT_ID,
+      // clientEmail: process.env.FIREBASE_ADMIN_CLIENT_EMAIL,
+      // privateKey: process.env.FIREBASE_ADMIN_PRIVATE_KEY?.replace(/\\n/g, '\n')
+    },
     public: {
       firebase: {
         // apiKey: process.env.NUXT_PUBLIC_FIREBASE_API_KEY,
